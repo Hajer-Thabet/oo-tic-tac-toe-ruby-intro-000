@@ -33,18 +33,11 @@ class TicTacToe
   def turn_count
   @board.count{|token| token=="X"||token=="O"}
   end
-
   def current_player
-   i=0
+  turn_count % 2 == 0 ? "X" : "O"
+  end
 
-  if @board[i]=="X"
-    i+=1
-    @board[i+1]="O"
-  elsif @board[i]=="O"
-    i+=1
-    @board[i+1]="X"
-  end
-  end
+
 
   #Takes a users num and the board, and places the X or O char in that position
   def move( index, current_player)
@@ -57,7 +50,18 @@ class TicTacToe
 
 
 
+
+
 end
 
 
-#turn
+
+
+#Asks user for a number, check if it is valid, and if it's not, recursively continues to ask for a number
+
+
+
+
+
+
+
