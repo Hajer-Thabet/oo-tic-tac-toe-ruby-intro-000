@@ -26,6 +26,24 @@ class TicTacToe
   index -= 1
   return index
   end
+  def valid_move?(@board, index)
+  index.between?(0,8) && !position_taken?(@board, index)
+  end
+  #turn_count
+  def turn_count
+  @board.count{|token| token=="X"||token=="O"}
+  end
+  def current_player
+   i=0
+
+  if @board[i]=="X"
+    i+=1
+    @board[i+1]="O"
+  elsif @board[i]=="O"
+    i+=1
+    @board[i+1]="X"
+  end
+  end
   
 
 
@@ -34,3 +52,9 @@ class TicTacToe
 
 
 end
+
+
+#turn
+
+
+
