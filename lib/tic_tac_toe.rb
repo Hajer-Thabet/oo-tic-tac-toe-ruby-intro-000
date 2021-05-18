@@ -44,7 +44,7 @@ class TicTacToe
     @board[i+1]="X"
   end
   end
-  
+
 
 
 
@@ -55,6 +55,3 @@ end
 
 
 #turn
-
-
-
