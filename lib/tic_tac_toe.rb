@@ -33,6 +33,7 @@ class TicTacToe
   def turn_count
   @board.count{|token| token=="X"||token=="O"}
   end
+  
   def current_player
    i=0
 
@@ -45,10 +46,15 @@ class TicTacToe
   end
   end
 
+  #Takes a users num and the board, and places the X or O char in that position
+  def move( index, current_player)
+  @board[index] = current_player
+  end
 
-
-
-
+  def position_taken?( location)
+  board[location] != " " && @board[location] != ""
+  end
+  
 
 
 end
