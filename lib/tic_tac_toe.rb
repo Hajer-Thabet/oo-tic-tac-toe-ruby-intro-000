@@ -27,7 +27,7 @@ class TicTacToe
   return index
   end
   def valid_move?( index)
-  index.between?(0,8) && !position_taken?(index)
+  index.between?(0,8) && !position_taken?(location)
   end
   #turn_count
   def turn_count
@@ -53,7 +53,7 @@ class TicTacToe
   def turn
   puts "Please enter 1-9:"
   input = gets.strip
-  index = input_to_index(input)
+  index = input_to_index(user_input)
     if valid_move?(index)
 
        move(0, "X")
@@ -67,6 +67,7 @@ class TicTacToe
 
 
 end
+
 
 
 
