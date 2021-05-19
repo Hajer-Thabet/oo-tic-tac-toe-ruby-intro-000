@@ -92,6 +92,21 @@ class TicTacToe
     @board.all?{|input| input=="O"||input=="X"}
   end
 
+  #draw?
+  def draw?
+
+  if won?==false && full?==true
+    true
+  else
+    false
+
+  end
+
+  end
+
+
+
+
 
 
 
