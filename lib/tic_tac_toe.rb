@@ -92,7 +92,7 @@ class TicTacToe
   @board.all?{|input| input=="O"||input=="X"}
   end
 
-  end
+  
 
 
 
