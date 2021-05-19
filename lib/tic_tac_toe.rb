@@ -113,7 +113,7 @@ class TicTacToe
    end
   end
 
-  
+
     #winner
   def winner
     index = []
@@ -128,7 +128,7 @@ class TicTacToe
       end
     end
   end
-    
+
 
 
 
