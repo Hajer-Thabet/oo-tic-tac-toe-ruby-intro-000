@@ -129,6 +129,66 @@ class TicTacToe
     end
   end
 
+  #play
+  def play
+    counter = 0
+    until counter == 9
+      turn
+      counter += 1
+    end
+  end
+  def play
+  until over?
+    turn
+  end
+  end
+
+
+  def play
+
+
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    if valid_move?(index)
+
+
+        move(0, "X")
+        move(1, "O")
+        move(2, "X")
+
+      display_board
+    else
+      turn
+    end
+
+
+
+
+  end
+
+
+
+
+
+  def play
+  until over?
+    turn
+  end
+
+  if won?
+    if winner=="X"
+      puts "Congratulations X!"
+    else
+      puts "Congratulations O!"
+
+    end
+
+
+  elsif draw?
+    puts"Cat's Game!"
+  end
+
 
 
 
