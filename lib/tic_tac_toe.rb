@@ -91,14 +91,14 @@ class TicTacToe
   def full?
   @board.all?{|input| input=="O"||input=="X"}
   end
-  
+
   end
 
 
 
 
 
-  
+
 
 end
 
